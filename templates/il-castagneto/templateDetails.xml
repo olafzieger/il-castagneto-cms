@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<extension type="template" version="1.6">
+  <name>il-castagneto</name>
+  <creationDate>20. Juli 2012</creationDate>
+  <author>Klaus Günther, Olaf Zieger</author>
+  <authorEmail>gestaltung@runze-casper.de, zieger@runze-casper.de</authorEmail>
+    <authorUrl>http://runze-casper.de</authorUrl>
+  <copyright>Klaus Günther, Olaf Zieger</copyright>
+  <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+  <version>1.2</version>
+  <description>Ein kleines Template für http://wiki.joomla-nafu.de und den EasyCreator</description>
+  <files folder="site">
+    <folder>css</folder>
+    <folder>html</folder>
+    <folder>images</folder>
+    <folder>javascript</folder>
+    <folder>language</folder>
+    <filename>CHANGELOG.php</filename>
+    <filename>component.php</filename>
+    <filename>de-DE.tpl_il-castagneto.ini</filename>
+    <filename>de-DE.tpl_il-castagneto.sys.ini</filename>
+    <filename>en-GB.tpl_il-castagneto.ini</filename>
+    <filename>en-GB.tpl_il-castagneto.sys.ini</filename>
+    <filename>error.php</filename>
+    <filename>favicon.ico</filename>
+    <filename>index.html</filename>
+    <filename>index.php</filename>
+    <filename>template_preview.png</filename>
+    <filename>template_thumbnail.png</filename>
+  </files>
+  <params />
+  <config>
+    <fields name="params">
+      <fieldset name="advanced">
+        <field name="sitetitle" type="text" default="" label="SIDE_TITLE" description="SIDE_TITLE_SET" filter="string" />/templates/il-castagneto/images/
+        <field name="sitedescription" type="text" default="" label="SIDE_DESCRIPTION" description="SIDE_DESCRIPTION_SET" filter="string" />
+        <field name="hintergrundbild" type="imagelist" default="" label="HINTERGRUND_BILD_LAB" description="HINTERGRUND_BILD_DESC" filter="^hintergrund_" directory="/templates/il-castagneto/images/" />
+      </fieldset>
+    </fields>
+  </config>
+</extension>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.7" type="plugin" group="content" method="upgrade">
+	<name>CSS Gallery</name>
+	<author>Andreas Berger</author>
+	<creationDate>2011-10-28</creationDate>
+	<copyright>Copyright (C) 2011 Andreas Berger - http://www.bretteleben.de. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>andreas_berger@bretteleben.de</authorEmail>
+	<authorUrl>www.bretteleben.de</authorUrl>
+	<version>1.3.5</version>
+	<description>Pure CSS Gallery. Include with {becssg}foldername{/becssg}</description>
+
+	<files>
+		<filename plugin="cssgallery">cssgallery.php</filename>
+		<folder>files</folder>
+		<filename>index.html</filename>
+	</files>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic" addfieldpath="plugins/content/cssgallery/files/">
+				<field name="desc" type="bexml" view="intro" label="" description="" />
+	
+				<field name="gallery" type="bexml" view="gallery" label="" description="" />
+				<field name="im_width" type="text" default="400" size="5" label="Gallery width" description="Adjust the width of your gallery in pixel." />
+				<field name="im_height" type="text" default="300" size="5" label="Gallery height" description="Adjust the height of your gallery in pixel." />
+				<field name="im_quality" type="text" default="95" size="5" label="Image quality" description="Adjust the quality of the generated image. Values range from 0 to 100, with 100 giving the best possible result. Values between 80 to 90 should be OK, too! Remember: the lower this value is, the lower the size of the generated image will be." />
+				<field name="im_keep" type="list" default="keep" label="Crop images" description="Set if to treat the set dimensions as maximum values and keep proportions or to crop the images to fit them exactly.">
+					<option value="keep">keep proportions</option>
+					<option value="crop">crop</option>
+				</field>
+				<field name="im_align" type="list" default="1" label="Align the gallery" description="This setting tells the plugin how to align the gallery in relation to the available space.">
+					<option value="2">left</option>
+					<option value="1">center</option>
+					<option value="0">right</option>
+					<option value="3">float left</option>
+					<option value="4">float right</option>
+				</field>
+				<field name="th_sort" type="list" default="0" label="Sort order" description="The sort order your images get displayed.">
+					<option value="0">A-Z</option>
+					<option value="1">Z-A</option>
+					<option value="2">old-new</option>
+					<option value="3">new-old</option>
+					<option value="4">random</option>
+				</field>
+				<field name="im_preload" type="radio" default="1" label="Preload images?" description="If set to yes, the images are written into the page out of sight to have them loaded with the page. This does not work with all browsers but its worth trying.">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="im_fixstart" type="radio" default="1" label="Fixed Startimage" description="If set to yes, the startimage is fixed, if set to no, the startimage disappears as soon as the mouse moves over the gallery.">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+
+				<field name="thumbs" type="bexml" view="thumbs" label="" description="" />
+				<field name="th_row" type="text" default="4" size="5" label="Thumbnails per row" description="How many thumbnails do you want to be shown per row?" />
+				<field name="th_quality" type="text" default="80" size="5" label="Thumbnail quality" description="Adjust the quality of the generated image thumbnail. Values range from 0 to 100, with 100 giving the best possible result. Values between 60 to 70 should be OK, too! Remember: the lower this value is, the lower the size of the generated thumbnail will be." />
+				<field name="th_space" type="text" default="5" size="5" label="Space between thumbs" description="The free horizonal and vertical space between your thumbnails in pixel."/>
+				<field name="th_keep" type="list" default="keep" label="Crop thumbnails" description="Set if to treat the set dimensions as maximum values and keep proportions or to crop the thumbnails to fit them exactly.">
+					<option value="keep">keep proportions</option>
+					<option value="crop">crop</option>
+				</field>
+				<field name="others" type="bexml" view="others" label=" " description="" />
+				<field name="cap_show" type="radio" default="1" label="Show captions?" description="If set to yes, found captions are shown, if set to no, they get hidden.">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="link_use" type="radio" default="1" label="Use links?" description="Choose whether to use found links.">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="imagepath" type="text" default="/images/" size="50" label="Image root" description="The path to the root folder in which your folders with images are stored (by default /images/).This part of the path is added by the plugin automatically to the foldername/path you specify in the code in your article. Usually there is no need to change this." />
+				<field name="gd" type="bexml" view="gd" label=" " description="" />
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

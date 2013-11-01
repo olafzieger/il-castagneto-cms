@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE easyproject PUBLIC "-//EasyCreator 0.0.14.1//DTD project 1.0//EN"
+"http://joomlacode.org/gf/project/elkuku/scmsvn/?action=browse&path=/*checkout*/dtd/easycreator/0.0.14.1/project.dtd">
+<easyproject type="template" scope="site" version="0.0.14.3" tpl="">
+  <name>kms-blueprint</name>
+  <comname>kms-blueprint-1.7</comname>
+  <JCompat>1.5</JCompat>
+  <extensionPrefix />
+  <langFormat>ini</langFormat>
+  <zipPath />
+</easyproject>

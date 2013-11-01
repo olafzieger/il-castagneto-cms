@@ -1,0 +1,415 @@
+body {
+background:#c4ab74;
+color: #036;
+margin:0px;
+padding:0px;
+font-size:11px;
+font-family:Arial,Helvetica,sans-serif;
+}
+#container {                 /* umfasst den ganzen Inhalt, also haeder, main mit content und menue */
+background-color: #fff;
+/*border:thin solid #0000CD;  */
+margin:0px auto;       /* Abstand rundherum und Platzierung horizontal in der Mitte */
+padding:0px 12px 12px;
+width:676px;          /* Breite */
+}
+#header {                    /* Für den Kopf */
+background-color: #99c;
+width:auto;
+margin: 0px;
+}
+.blog {
+margin: 82px 0px 0px;
+}
+#fuss {                    
+background-color: #9F864E;
+font-weight: normal;
+height: 20px;
+}
+
+#fuss .menu {                    
+background: none;
+}
+
+.sitename {         /* Klasse für dem Seitennamen, gibt der Schrift Farbe und Größe */
+font-size: 30px;
+text-align: left;
+padding: 0px 15px 3px;
+color: white;
+font-family: 'Times New Roman', Times, serif;
+background-color: #669;
+width:auto;
+margin: 0px;
+}
+.h2 {
+font-size: 23px;
+background-color: #669;
+text-align: left;
+padding: 0px 15px 12px;
+color: white;
+font-weight: 100;
+width: auto;
+}
+.line {
+width:auto;
+height:2px;
+padding: 2px 15px;
+border-top: 1px solid #fff;
+}
+ul.menu {         /* Klasse für dem Menü-Oben, gibt der Schrift Farbe und Größe */
+color: #0000CD; 
+background-color: #99c;
+width:100%;
+height:20px;
+margin: 0px;
+padding:0px;
+font-weight: bold;
+}
+ul.menu li {
+display: inline;  /* Shows each item side-by-side */
+list-style-type: none;  /* Gets rid of the bullet points */
+}
+ul.menu a {
+display: block;  /* Gets rid of the bullet points */
+float: left;
+padding: 4px 16px;  /* Provides horizontal separation between menu items */
+color: #036;
+text-decoration: none;
+font-size: 11px;
+}
+#main {                      /* Hauptbereich/Haupt-Slice, umfasst die Slices links, content, rechts */
+clear:left;
+background-color:#99c;
+min-height:450px;
+/*border:thin solid #0000CD;*/
+overflow:hidden;       /* Damit der ganze Inhalt angezeigt wird */
+width:auto;
+margin: 0px;
+}
+#links {         /* Linke Spalte (Joomla-Standard: Hauptmenue, Quellen ... Anmeldung  */
+background-color:Aqua;
+border:thin solid #0000CD;
+float:left;         /* Setzt den Slice nach links */
+width:194px;
+}
+#content{                    /* Slice für den Content */
+border:0px;
+background-color: #99c;
+width:auto;
+margin: 0px 12px 0px 12px;
+}
+#rechts {           /* rechte Spalte (Joomla-Standard: Umfragen ... Werbung  */
+background-color:Aqua;
+border:thin solid #0000CD;
+float:right;           /* Setzt den Slice nach rechts */
+width:200px;
+}
+
+/* Einstellung für Listen, wirkt sich auf die Menüs aus */
+ul {      
+margin: 0 0 0 15px;
+padding: 0;
+}
+li{}
+
+/* einzelnen Menüpunkten unterschiedliches Aussehen geben */
+#rechts .item-207 a{ background-color: black; color: white;}
+#rechts .item-207 a:hover{ background-color: white; color: black; }
+#rechts .item-444 a{ background-color: green; color: white; } 
+#rechts .item-444 a:hover { background-color: black;color:white; }
+#rechts .item-464 a{ background-color: red; color: white; }
+#rechts .item-464 a:hover{ background-color: yellow; color: black;}
+
+
+/*****************************************/
+/*** Joomla! specific content elements ***/
+/*****************************************/
+ 
+div.offline { }
+ 
+span.pathway { }
+ 
+/* headers */
+div.componentheading { }
+ 
+h1 { }
+ 
+h2, .contentheading { }
+ 
+table.contentpaneopen h3 { }
+ 
+h4 { }
+ 
+h3, .componentheading, table.moduletable th, legend { }
+ 
+/* small text */
+.small { }
+ 
+.modifydate { }
+ 
+.createdate { }
+ 
+a.readon { }
+ 
+/* form validation */
+.invalid { }
+label.invalid { }
+ 
+ 
+/** overlib **/
+ 
+.ol-foreground { }
+ 
+.ol-background { }
+ 
+.ol-textfont { }
+ 
+.ol-captionfont { }
+.ol-captionfont a { }
+ 
+.ol-closefont {}
+ 
+/* menu links */
+a.mainlevel:link, a.mainlevel:visited { }
+ 
+a.mainlevel:hover { }
+ 
+/* spacers */
+span.article_separator { }
+ 
+.article_column { }
+ 
+.column_separator { }
+ 
+td.buttonheading { }
+ 
+td.buttonheading img { }
+ 
+.clr { }
+ 
+td.greyline { }
+ 
+div#maindivider { }
+ 
+table.blog span.item-seperator { }
+ 
+/* edit button */
+.contentpaneopen_edit{ }
+ 
+/* table of contents */
+table.contenttoc { }
+ 
+table.contenttoc td { }
+ 
+ 
+/* content tables */
+td.sectiontableheader { }
+ 
+tr.sectiontableentry0 td,
+tr.sectiontableentry1 td,
+tr.sectiontableentry2 td { }
+ 
+td.sectiontableentry0,
+td.sectiontableentry1,
+td.sectiontableentry2 { }
+ 
+ 
+/* content styles */
+table.contentpaneopen, table.contentpane { }
+ 
+table.contentpaneopen li { }
+ 
+table.contentpaneopen fieldset { }
+ 
+table.contentpaneopen h3 { }
+ 
+table.contentpaneopen h4 { }
+ 
+.highlight { }
+ 
+/* module control elements */
+table.user1user2 div.moduletable { }
+ 
+div.moduletable, div.module { 
+float: right;
+}
+
+div.moduletable .menu{ }
+ 
+div.module_menu h3 { }
+ 
+div.module_menu { }
+ 
+div.module_menu div div div { }
+ 
+div.module_menu div div div div { }
+ 
+div.module_menu ul { }
+ 
+div.module_menu ul li a:link, div.module_menu ul li a:visited { }
+ 
+#leftcolumn div.module { }
+ 
+#leftcolumn div.module table { }
+ 
+/* forms */
+table.adminform textarea { }
+ 
+div.search input { }
+ 
+form#form-login fieldset { }
+form#form-login ul { }
+ 
+form#com-form-login fieldset { }
+form#com-form-login ul { }
+ 
+/* thumbnails */
+div.mosimage         { }
+div.mosimage_caption { }
+ 
+div.caption       { }
+div.caption img   { }
+div.caption p     { }
+ 
+/* Parameter Table */
+table.paramlist { }
+ 
+table.paramlist td.paramlist_key { }
+ 
+table.paramlist td.paramlist_value { }
+ 
+div.message { }
+ 
+/* Banners module */
+ 
+/* Default skyscraper style */
+.bannergroup { }
+ 
+.banneritem img { }
+ 
+/* Text advert style */
+ 
+.banneritem_text { }
+ 
+.bannerfooter_text { }
+ 
+/* System Messages */
+/* see system general.css */
+ 
+.pagination span { }
+.pagination a    { }
+ 
+/* Polls */
+.pollstableborder td { }
+ 
+/* WebLinks */
+span.description { }
+ 
+/* Frontend Editing*/
+fieldset { }
+ 
+legend { }
+ 
+td.key { }
+ 
+/* Tooltips */
+ 
+.tool-tip { }
+ 
+.tool-title { }
+ 
+.tool-text { }
+
+.tip-wrap { background-color:#C4AB74; padding:3px; border:solid 4px #fff; }
+ 
+/* System Standard Messages */
+#system-message { }
+ 
+#system-message dd.message ul { }
+ 
+/* System Error Messages */
+#system-message dd.error ul { }
+ 
+/* System Notice Messages */
+#system-message dd.notice ul { }
+ 
+#syndicate{ }
+ 
+#power_by{ }
+
+/* ++++++++++++++  blog  ++++++++++++++ */
+
+.cols-1
+{
+        display: block;
+        float: none !important;
+        margin: 0 !important;
+}
+
+.cols-2 .column-1
+{
+        width:46%;
+        float:left;
+}
+
+.cols-2 .column-2
+{
+        width:46%;
+        float:right;
+        margin:0
+}
+
+.cols-3 .column-1
+{
+        float:left;
+        width:29%;
+        padding:0px 5px;
+        margin-right:4%
+
+}
+.cols-3 .column-2
+{
+        float:left;
+        width:29%;
+        margin-left:0;
+        padding:0px 5px
+}
+.cols-3 .column-3
+{
+        float:right;
+        width:29%;
+        padding:0px 5px
+}
+
+.items-row
+{
+        overflow:hidden;
+        margin-bottom:0px !important;
+}
+
+.column-1,
+.column-2,
+.column-3
+{
+        padding:0px 10px 5px;
+}
+
+.column-2
+{
+        width:55%;
+        margin-left:40%;
+}
+
+.column-3
+{
+        width:30%
+}
+
+.blog-more
+{
+        padding:10px 5px
+}
+
+div.edit fieldset {display: none;}
+div.edit fieldset:first-child {display:block;}
+.edit-icon {list-style-type:none;}
